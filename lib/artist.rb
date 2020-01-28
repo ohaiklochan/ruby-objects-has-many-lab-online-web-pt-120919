@@ -10,7 +10,7 @@ class Artist
 
   def songs
     @songs
-    song.artist = 
+    song.artist = Artist
     song = Song.new(name)
   end
 
