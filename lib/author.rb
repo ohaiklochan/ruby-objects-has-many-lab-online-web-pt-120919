@@ -7,18 +7,10 @@ class Author
     @post = []
   end
   
-    @@song_count = 0
-  def initialize(name)
-    @name = name
-    @songs = []
-  end
+    @@post_count = 0
 
-  def songs
-    @songs
-  end
-
-  def add_song(song)
-    @songs << song
+  def add_post(post)
+    @post << post
     song.artist = self
     @@song_count += 1
   end
