@@ -10,7 +10,9 @@ class Author
     @@post_count = 0
     
   def posts
-    @posts
+    Post.all.select do |post|
+      post.author == self
+    end
   end
 
   def add_post(post)
