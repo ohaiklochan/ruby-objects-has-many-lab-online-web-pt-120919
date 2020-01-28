@@ -10,5 +10,7 @@ class Song
     if @artist == nil
       return nil
     else
-      
+      @artist_name
+    end
+  end
 end
