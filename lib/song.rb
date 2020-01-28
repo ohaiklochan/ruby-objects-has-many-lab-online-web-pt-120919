@@ -7,10 +7,10 @@ class Song
   end
   
   def artist_name
-    if @artist
-      return @artist_name
+    if artist
+      self.artist.name
     else
-      return nil
+      nil
     end
   end
 end
