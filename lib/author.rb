@@ -4,26 +4,26 @@ class Author
   
   def initialize(name)
     @name = name
-    @post = []
+    @posts = []
   end
   
     @@post_count = 0
 
   def add_post(post)
-    @post << post
+    @posts << post
     post.author = self
-    @@song_count += 1
+    @@post_count += 1
   end
   
-  def add_song_by_name(song_name)
-    song = Song.new(song_name)
-    @songs << song
-    song.artist = self
-    @@song_count += 1
+  def add_post_by_title(post_title)
+    post = Post.new(post_title)
+    @posts << post
+    post.author = self
+    @@post_count += 1
   end
 
-  def self.song_count
-    @@song_count
+  def self.post_count
+    @@post_count
   end
   
 end
